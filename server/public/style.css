@@ -1,55 +1,25 @@
-.container {
+table {
+	border-collapse: collapse;
+	width: 80%;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body{
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.avatar {
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-right: 50px;
-}
-
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.info {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.info h1 {
-  margin-top: 0;
-}
-
-.info p {
-  margin-bottom: 5px;
-}
-
-.experience {
-  margin: 50px 0;
-}
-
-.experience h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.experience li {
-  margin-bottom: 20px;
-}
-
-.experience h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.experience p {
-  margin-bottom: 5px;
 }
