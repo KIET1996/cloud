@@ -1,12 +1,14 @@
-const http = require('http');
-const port = process.env.PORT || 3000
+const express = require('express');
+const app = express();
+const path = require('path');
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  res.end('<h1>Hello World</h1>');
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-server.listen(port,() => {
-  console.log(`Server running at port `+port);
+app.listen(3000, function() {
+  console.log('Ứng dụng đang chạy trên cổng 3000!');
 });
+
